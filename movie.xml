@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<movie 
+      xmlns="http://www.rzinsmeister.com/schema" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                  
+      xsi:schemaLocation="http://wwww.rzinsmeister.com/schema/      
+      movie.xsd">
+
+    <title>Blood Diamond</title>
+    <directors>Edward Zwick</directors>
+    <genre>action</genre>
+    <author>ur4144857</author>
+</movie>

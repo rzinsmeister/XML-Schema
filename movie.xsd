@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:target="http://www.rzinsmeister.com/schema"
+	targetNamespace="http://www.rzinsmeister.com/schema" 
+	elementFormDefault="qualified">
+
+  <element name="movie">
+   <attribute name="imdb_num" type="string" />
+   <attribute name="year" type="string" />
+   <attribute name="total_reviews" type="string" />
+    <complexType>
+      <sequence>
+
+        <element name="title" type="string" />
+
+        <element name="directors" type="string">
+          <complexType>
+            <sequence>
+              <element name="name" minOccurs="1" maxOccurs="unbounded" />
+            </sequence>
+          </complexType>
+        </element>
+
+        <element name="genre" type="string">
+          <complexType>
+            <sequence>
+              <element name="genre_tag" minOccurs="1" maxOccurs="unbounded" />
+            </sequence>  
+          </complexType>
+        </element>
+
+	      <element name="author" type="string">
+          <attribute name="gender" type="string" />
+          <attribute name="authored" type="string" />
+          <attribute name="screen_name" type="string" />
+          <attribute name="reg_date" type="string" />
+          <attribute name="last_act" type="string" />
+            <complexType>
+            <sequence>
+              <element name="location" type="string" />
+              <element name="total_written" type="string" />
+              <element name="email" type="string" />
+              <element name="website" type="string" />
+              <element name="bio" type="string" />
+              <element name="review" type="string" />
+            </sequence>
+            </complexType>
+        </element>
+
+      </sequence>
+    </complexType>
+  </element>
+</schema>
