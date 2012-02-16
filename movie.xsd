@@ -53,7 +53,9 @@
                 <sequence>  
                   <element name="stars" type="string" />
                   <element name="revtitle" type="string" />
-                  <element name="text" type="string" />
+                  <element name="text" type="string" >
+                      <element name="paragraph" type="string" />  
+                  </element>
                 </complexType>
                 </sequence>
             </sequence>
